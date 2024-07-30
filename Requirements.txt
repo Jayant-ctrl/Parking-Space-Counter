@@ -4,4 +4,6 @@ Packages ---->
 3. cvzone
 
 Steps ---->
-1. First run the 
+1. First run the ParkingSpacePicker file to allocate spaces for the parking blocks.
+2. This will generate a CarParkPos file.
+3. Then run the ParkingSpaceCalculator file.
