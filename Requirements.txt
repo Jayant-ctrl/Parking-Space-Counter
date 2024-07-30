@@ -1,0 +1,7 @@
+Packages ---->
+1. opencv-python
+2. numpy
+3. cvzone
+
+Steps ---->
+1. First run the 
