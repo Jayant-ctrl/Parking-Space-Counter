@@ -22,8 +22,8 @@ def checkParkingSpace(imgPro):
     #    cv2.imshow(str(x*y), imgCrop)
        count = cv2.countNonZero(imgCrop)
        if count < 950:
-           color = (0,255,0)
-           thickness = 5
+           color = (0,255,255)
+           thickness = 4
            spaceCounter += 1
        else:
            color = (0,0,255)
@@ -31,7 +31,7 @@ def checkParkingSpace(imgPro):
 
        cv2.rectangle(frame, pos, (pos[0]+width, pos[1]+height), color, thickness)   
        cvzone.putTextRect(frame, str(count), (x, y+height-3), scale=1, thickness=2, offset=0, colorR=color) 
-       cvzone.putTextRect(frame, f'Free: {spaceCounter}/{len(posList)}', (100, 50), scale=3, thickness=5, offset=20, colorR=(0,200,0))
+       cvzone.putTextRect(frame, f'Free: {spaceCounter}/{len(posList)}', (100, 50), scale=3, thickness=5, offset=20, colorR=(255,0,255))
 while True:
     if capture.get(cv2.CAP_PROP_POS_FRAMES) == capture.get(cv2.CAP_PROP_FRAME_COUNT):
          capture.set(cv2.CAP_PROP_POS_FRAMES, 0)
