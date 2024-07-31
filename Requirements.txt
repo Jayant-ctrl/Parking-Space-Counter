@@ -3,7 +3,7 @@ Packages ---->
 2. numpy
 3. cvzone
 
-Steps ---->
+Steps ---->(First install all above packages) --->
 1. First run the ParkingSpacePicker file to allocate spaces for the parking blocks.
 2. This will generate a CarParkPos file.
 3. Then run the ParkingSpaceCalculator file.
